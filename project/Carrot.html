@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cleaning">
+        <img src="img/carrot1.jpg" alt="">
+        <br>
+        <label for="numP">How many plants are there? </label>
+        <input id="numP" type="text" >
+        <br>
+        <label for="averageH">when do you want the robot to clean? </label>
+        <input id="averageH" type="text" placeholder="00cm">
+        <br>
+        <label for="workDone">What did you do today? </label>
+        <select id="workDone">
+          <option value="water">water the plants</option>
+          <option value="fertilize">fertilize</option>
+          <option value="harvest">harvest</option>
+        </select>
+        <br>
+        <button onclick="carrotUpdate()">Click</button>
+        <br>
+        <label for="delete">which robot do you want to delete? </label>
+        <input id="delete" type="text" placeholder="No. of the robot">
+        <button onclick="cleanDelete()">Delete</button>
+    </div>
+    <div id="yourCarrots">
+
+    </div>
+        <script src="Carrot.js"></script>
+</body>
+</html>

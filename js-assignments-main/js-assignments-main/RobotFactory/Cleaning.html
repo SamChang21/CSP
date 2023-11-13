@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="Cleaning">
+    <div id="cleaning">
+        <img src="https://indianews.com.au/wp-content/uploads/2022/08/maidbot-maid-robot-cleaning-house-e1572449350963-684x640.jpg" alt="">
+        <br>
+        <label for="name">What is the No. of the robot that your are sending? </label>
+        <input id="name" type="text" >
+        <br>
+        <label for="functions">What do you want the cleaning robat to do? </label>
+        <select id="functions">
+          <option value="wash cloths">wash cloths</option>
+          <option value="throw trash away">throw trash away</option>
+          <option value="clean the floor">clean the floor</option>
+        </select>
+        <br>
+        <label for="time">when do you want the robot to clean? </label>
+        <input id="time" type="text" placeholder="00:00">
+        <br>
+        <label for="img">when do you want the robot to clean? </label>
+        <input id="img" type="text" placeholder="Link url of pic">
+        <button onclick="cleanClick()">Click</button>
+        <br>
+        <label for="delete">which robot do you want to delete? </label>
+        <input id="delete" type="text" placeholder="No. of the robot">
+        <button onclick="cleanDelete()">Delete</button>
+    </div>
+    <div id="workingClean">
+
+    </div>
+        <script src="clean.js"></script>
+</body>
+</html>

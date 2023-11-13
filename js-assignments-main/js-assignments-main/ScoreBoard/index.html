@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ScoreBoard</title>
+</head>
+<body>
+    <div class="scoreboard">
+        <div class="left">
+            <div class="name1"></div>
+            <div class="score1"></div>
+            <button onclick="s1add1()">+1</button>
+            <button onclick="s1add2()">+2</button>
+            <button onclick="s1add3()">+3</button>
+            <button onclick="s1sub1()">-1</button>
+            <button onclick="reset1()">reset</button>
+
+        </div>
+        <div class="mid">
+            <div class="timing">
+                <div class="time"></div>
+                <h3 class="periodTitle" >
+                    period
+                </h3>
+                <div class="period"></div>
+                <h3 class="shotpTitle" >
+                    shot clock
+                </h3>
+                <div class="shotp"></div>
+                </div>
+                <button class="start" onclick="startall()">start</button>  
+                <button class="resetall" onclick="resetall()">reset all</button>   
+                <div class="timeControle">
+                    <button onclick="start()">start timing</button>
+                    <button onclick="pause()">pause timing</button>
+                    <button onclick="resets()">reset timing</button>
+                </div>
+                <div class="shotpTime">
+                    <button onclick="starts()">start shot clock</button>
+                    <button onclick="pauses()">pause shot </button>
+                    <button onclick="resets()">reset shot clock</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="name2"></div>
+            <div class="score2"></div>
+            <button onclick="s2add1()">+1</button>
+            <button onclick="s2add2()">+2</button>
+            <button onclick="s2add3()">+3</button>
+            <button onclick="s2sub1()">-1</button>
+            <button onclick="reset2()">reset</button>
+
+        </div>
+
+    </div>
+    <script src="ScoreBoard.js"></script>
+</body>
+</html>

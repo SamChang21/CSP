@@ -1,0 +1,59 @@
+/* style.css */
+
+/* center the buttons */
+.song1Button,
+.song2Button,
+.song3Button {
+  display: flex;
+  justify-content: center;
+}
+
+/* style the buttons */
+button {
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 4px;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* style the song information */
+.song1Info,
+.song2Info,
+.song3Info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.song1Info img,
+.song2Info img,
+.song3Info img {
+  border-radius: 50%;
+  margin: 20px;
+  max-width: 200px;
+}
+
+.song1Info p:first-child,
+.song2Info p:first-child,
+.song3Info p:first-child {
+  font-size: 24px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.song1Info p:last-child,
+.song2Info p:last-child,
+.song3Info p:last-child {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}

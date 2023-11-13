@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="Cooking">
+    <div id="cooking">
+        <img src="https://api.time.com/wp-content/uploads/2015/04/moley-robotics-automated-kitchen_lr.jpg" alt="">
+        <br>
+        <label for="name">What is the No. of the robot that your are sending? </label>
+        <input id="name" type="text" placeholder="01">
+        <br>
+        <label for="functions">What do you want the cooking robat to cook? </label>
+        <select id="functions">
+          <option value="making breakfirst">make breakfirst</option>
+          <option value="making lunch">make lunch</option>
+          <option value="making dinner">make dinner</option>
+          <option value="making snack">make snack </option>
+        </select>
+        <br>
+        <label for="times">How many people is the robot cooking for? </label>
+        <input id="times" type="text" placeholder="01">
+        <br>
+        <label for="img">when do you want the robot to clean? </label>
+        <input id="img" type="text" placeholder="Link url of pic">
+        <button onclick="cookClick()">Click</button>
+    </div>
+    <div id="workingCook">
+
+    </div>
+    <script src="cook.js"></script>
+</body>
+</html>

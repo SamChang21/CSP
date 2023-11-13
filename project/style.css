@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Bungee+Spice&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+.icon{
+    width: 300px;
+    height: 300px;
+    animation: jump;
+    animation-duration: 2s;
+    left: 700px;
+    opacity: 0;
+    position: absolute;
+}
+@keyframes jump{
+    0%{
+        transform: translateY(0px);
+        opacity: 1;
+        position: static;
+        margin-top: 250px;
+}
+    50%{
+        transform: translateY(-100px);
+        margin-top: 250px;
+    }
+    66.6%{
+        transform: rotate(180deg);
+        margin-top: 250px;
+    }
+    82.6% {
+        transform: rotate(360deg);
+        margin-top: 250px;
+    }
+    100%{
+        transform: translateY(100px);
+        opacity: 1;
+        position: static;
+        margin-top: 250px;
+    }
+}
+@keyframes reveal{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.Protfolio{
+    background-image: url("img/menuBackgroung.jpg");
+    justify-content: space-around;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    flex-wrap: wrap;
+    position:sticky;
+    top: 0;
+    animation: reveal;
+    animation-duration: 4s;
+
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 0;
+    flex-direction: column;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+#logo{
+    height: 8vh;
+    width: 8vw;
+    margin:auto;
+    margin-top: 0%;
+    position: absolute;
+    left: 46%;
+}
+.menu{
+    position:sticky;
+    top: 0;
+    width: 20vw;
+    text-align: center;
+    padding: 20px;
+    display: flex;   
+    align-items: center; 
+    justify-content: center;
+}
+.projects{
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    
+}
+#pages{
+    position: fixed;
+    bottom: 0;
+    width: 300px;
+    height: 30px;
+    margin-top: 90vh;
+    text-align: center;
+}
+.projectHover1, .projectHover2, .projectHover3,.projectHover4,.project1, .project2, .project3,.project4{
+    width: 35vw;
+    height: 60vh;
+    margin:20px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20%;
+
+}
+.project1{
+    background-image: url("img/carrot1.jpg");
+}
+.project2{
+    background-image: url("img/tomato1.jfif");
+}
+.project3{
+    background-image: url("img/peas1");
+}
+.project4{
+    background-image: url("img/cucumber1.webp");
+}
+.projectHover2{
+    background-image: url("img/tomato2.jpeg");
+}
+.projectHover3{
+    background-image: url("img/peas2.jfif");
+}
+.projectHover4{
+    background-image: url("img/cucumber2.jpg");
+}
+.projectHover1{
+    background-image: url("img/carrot2.jpg");
+}
+.projectHover1, .projectHover2, .projectHover3,.projectHover4{
+    opacity: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.projectHover1:hover, .projectHover2:hover, .projectHover3:hover,.projectHover4:hover{
+    opacity: 1;
+}
+h1{
+    margin: 0;
+    color: white;
+}
+/*WelcomePage*/
+.Welcome{
+    font-family: 'Bungee Spice', cursive;
+    font-size: 96px;
+    animation: reveal;
+    animation-duration: 4s;
+    text-align: center;
+}
+.ToProject{
+    height: 80vh;
+    width: 100vw;
+    animation: reveal;
+    animation-duration: 4s;
+    display: flex;
+    justify-content: center;
+}
+@keyframes MovefromLeft{
+    0%{
+        transform: translateX(-50vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+@keyframes MovefromRight{
+    0%{
+        transform: translateX(50vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+.ToProject-left{
+    /* animation: MovefromLeft; */
+    background-image: url("img/plantGrowth-left.png");
+    animation: MovefromLeft;   
+}
+.ToProject-right{
+    /* animation: MovefromRight; */
+    background-image: url("img/plantGrowth-right.png");
+    animation: MovefromRight;
+}
+.ToProject-left,.ToProject-right{
+    animation-duration: 4s;
+    height: 75vh;
+    width: 25vw;
+}
+.info{
+    text-align:center ;
+}
+.infoPic{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+img{
+    height: 40vh;
+    width: 20vw;
+    margin: auto;
+}
+div{
+    text-align: center;
+}

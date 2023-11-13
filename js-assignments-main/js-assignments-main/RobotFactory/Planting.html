@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="Planting">
+    <div id="cleaning">
+        <img src="https://static01.nyt.com/images/2019/11/08/science/00TB-FARMBOTS1/00TB-FARMBOTS1-superJumbo.jpg" alt="">
+        <br>
+        <label for="name">What is the No. of the robot that your are sending? </label>
+        <input id="name" type="text" >
+        <br>
+        <label for="functions">What do you want the planting robat to do? </label>
+        <select id="functions">
+          <option value=" pea">plant pea</option>
+          <option value=" fruits">plant fruits</option>
+          <option value=" rice">plant rice</option>
+        </select>
+        <br>
+        <label for="number">how many plants you want the robot to plant? </label>
+        <input id="number" type="text" >
+        <br>
+        <label for="img">when do you want the robot to clean? </label>
+        <input id="img" type="text" placeholder="Link url of pic">
+        <button onclick="plantClick()">Click</button>
+    </div>
+    <div id="workingPlant">
+
+    </div>
+        <script src="plant.js"></script>
+</body>
+</html>
